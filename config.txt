@@ -1,0 +1,6 @@
+對應檔案: /LayoutDiffusion/configs/COCO-stuff_256X256/LayoutDiffusion_large.yaml
+    -要在哪裡設置訓練時所用到的資料集: data/parameters/root_dir + data/parameters/train/image_dir(請具體寫出該參數的名稱路徑 eg. model/parameters/image_size)
+    -要在哪裡設置訓練時的整體總步數: diffusion/parameters/diffusion_steps
+    -要在哪裡設置訓練途中每多少步數可以做模型儲存: train/save_interval
+    -要在哪裡設置訓練模型的存放路徑: train/log_dir
+    -要在哪裡設置訓練時所使用的預訓練模型:train/pretrained_model_path

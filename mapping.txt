@@ -1,0 +1,63 @@
+Data Processing (6個框框)
+    -對應檔案: /LayoutDiffusion/layout_diffusion/layout_encoder.py
+        -檔案具體是在做甚麼: 預處理輸入資料
+
+        -物件類別名稱:
+            -被包在哪個class裡面: LayoutTransformerEncoder
+            -判斷行數位置: 第175行~第176行
+
+        -物件bbox:
+            -被包在哪個class裡面: LayoutTransformerEncoder
+            -判斷行數位置: 第177行~第178行
+
+        -物件類別資料型態處理:
+            -被包在哪個class裡面: LayoutTransformerEncoder
+            -判斷行數位置: 第220行
+
+        -物件bbox資料型態處理:
+            -被包在哪個class裡面: LayoutTransformerEncoder
+            -判斷行數位置: 第228行
+
+        -資料融合:
+            -被包在哪個class裡面: LayoutTransformerEncoder
+            -判斷行數位置: 第221行~第224行 + 第229行~第232行 + 第244行~第247行
+
+        -資料融合處理:
+            -被包在哪個class裡面: LayoutTransformerEncoder
+            -判斷行數位置: 第253行~第261行
+
+
+Global Conditioning (3個框框)
+    -對應檔案: /LayoutDiffusion/layout_diffusion/layout_diffusion_unet.py
+        -檔案具體是在做甚麼: 把圖像特徵跟局部特徵相互融合，以生成整體結構不變且細節清楚的圖像
+
+        -Image:
+            -被包在哪個class裡面: AttentionBlock
+            -判斷行數位置: 第350行
+
+        -資料融合嵌入 (embedding):
+            -被包在哪個class裡面: AttentionBlock
+            -判斷行數位置: 第353行~第358行
+
+        -Global Conditioning處理:
+            -被包在哪個class裡面: AttentionBlock
+            -判斷行數位置: 第349行~第359行
+
+Local Conditioning (1個框框)
+    -對應檔案: /LayoutDiffusion/layout_diffusion/layout_diffusion_unet.py
+        -檔案具體是在做甚麼: 把圖像特徵跟局部特徵相互融合，以生成整體結構不變且細節清楚的圖像
+
+        -Local Conditioning (OaCA):
+            -被包在哪個class裡面: ObjectAwareCrossAttention
+            -判斷行數位置: 第450行~第566行
+
+Loss Function
+    -對應檔案: /LayoutDiffusion/layout_diffusion/gaussian_diffusion.py
+        -檔案具體是在做甚麼: 訓練和採樣擴散模型的實用程式、計算loss。
+
+        -被包在哪個class裡面: GaussianDiffusion
+        -判斷行數位置: 第92行
+
+
+
+
